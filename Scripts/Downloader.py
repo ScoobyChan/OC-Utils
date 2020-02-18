@@ -1,4 +1,4 @@
-import os, time, urllib, sys, json, shutil, requests
+import os, time, urllib, sys, json, shutil
 
 if sys.version_info >= (3,0):
 	import zipfile
@@ -14,9 +14,11 @@ try:
 	import magic
 	from pyunpack import Archive
 	import wget
+	import requests
 except:
-	os.system('pip install --user pyunpack patool python-magic patool wget')
+	os.system('pip install --user pyunpack patool python-magic patool wget requests')
 	import magic
+	import requests
 	from pyunpack import Archive
 	import patoolib
 	import wget
